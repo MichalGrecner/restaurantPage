@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    box-sizing: border-box;
+    --backclr: #40404096;
+}
+
+body{
+    background-image: url(/src/img/backgrnd_large.jpg);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    min-width: 500px;
+    
+    
+    
+    
+}
+#content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+
+}
+    
+
+#navigation{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    width:80vw;
+    justify-content: space-around;
+    max-width: 1100px;
+    min-width: 500px;
+}
+li{
+    margin: 30px 0;
+    
+    height:auto;
+    /*width: vw;*/
+    min-width: 60px;
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    font-size: clamp(30px, 2vw, 40px);
+    
+    background-color: var(--backclr);
+    border-radius: 15px;
+    padding: 20px 50px 20px 50px;
+    color:white;
+
+}
+
+
+h1{
+    color:white;
+    text-align: center;
+    font-size: clamp(50px, 2.5vw, 60px);
+    
+    
+}
+
+#info{
+    width:80vw;
+    max-width: 1100px;
+    min-width: 500px;
+}
+
+
+#info p{
+    font-size: clamp(30px, 2vw, 40px);
+    background-color: var(--backclr);
+    border-radius: 15px;
+    padding: 20px 50px 20px 50px;
+    color:white;
+    
+
+
+
+}
+#nameCont{
+    background-color: var(--backclr);
+    border-radius: 15px;
+    margin-top: 40px;
+    padding: 20px 50px 20px 50px;
+    
+
+
+}
+@media (max-width: 767px){
+    
+    body{
+        background-image: url(/src/img/backgrnd_small.jpg);
+    }
+
+    h1{
+        color:green;
+    }
+    li{
+        padding: 20px 2rem 20px 2rem;
+    }
+}
