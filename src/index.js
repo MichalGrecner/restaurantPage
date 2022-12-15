@@ -1,4 +1,4 @@
-//import './style.css';
+import './style.css';
 //import { container } from "webpack";
 import {homeScreen} from "/src/home.js";
 import {menuScreen} from "/src/menu.js";
