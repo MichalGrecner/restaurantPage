@@ -1,10 +1,16 @@
 const contactScreen = function () {
     const main = document.querySelector("main")
-    const contactText = `
-    MONDAY-SUNDAY 7AM - 9PM
-    `;
+    const OpenTime = "MON-SUN...........7AM - 9PM";
+    const name = "Fake Fancy Café"
+    const street = "FamousBridge Avenue 1"
+    const zipCode = "110 00 Prague, Czechia"
+
+
+
+
     const mapDiv = document.createElement("div");
-    const map = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6340.968937985935!2d14.40533066525328!3d50.088957320792055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b951e6c24b7c3%3A0x2acf3c88af12259f!2zUHJhxb5za8O9IGhyYWQ!5e0!3m2!1scs!2scz!4v1670956569211!5m2!1scs!2scz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+    const map = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11708.751414257229!2d14.42571435116!3d50.08277903227256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e5e58eb59f%3A0x75209738d1d3b126!2sKarl%C5%AFv%20most!5e0!3m2!1scs!2scz!4v1671108794051!5m2!1scs!2scz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    `
 
     mapDiv.id="map";
     mapDiv.innerHTML = map;
@@ -17,12 +23,28 @@ const contactScreen = function () {
     const contactDiv = document.createElement("div");
     contactDiv.id = "contact";
 
-    const para = document.createElement("p");
-    para.textContent = contactText;
+    const openTimePara = document.createElement("p");
+    openTimePara.textContent = OpenTime;
 
-    contactDiv.appendChild(para);
+    const namePara = document.createElement("p");
+    namePara.textContent = name;
+
+    const streetPara = document.createElement("p");
+    streetPara.textContent = street;
+
+    const zipcodePara = document.createElement("p");
+    zipcodePara.textContent = zipCode;
+
+
+    contactDiv.appendChild(openTimePara);
+    contactDiv.appendChild(document.createElement("br"));
+    contactDiv.appendChild(namePara);
+    contactDiv.appendChild(streetPara);
+    contactDiv.appendChild(zipcodePara);
     container.appendChild(contactDiv);
-    container.appendChild(mapDiv)
+    contactDiv.appendChild(document.createElement("br"));
+    container.appendChild(mapDiv);
+    container.appendChild(document.createElement("br"));
     main.appendChild(container);
     
 }

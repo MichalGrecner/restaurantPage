@@ -4,6 +4,7 @@ import {homeScreen} from "/src/home.js";
 import {menuScreen} from "/src/menu.js";
 import {contactScreen} from "/src/contact.js";
 
+const name = "Fake Fancy Café"
 
 //div id content
 const content = document.querySelector("#content");
@@ -12,7 +13,7 @@ const headerCont = document.createElement("div");
 headerCont.id="headerCont";
 //h1 element restaurant name
 const header = document.createElement("h1");
-header.innerText = "Some cool caffe name";
+header.innerText = name;
 
 headerCont.appendChild(header)
 content.appendChild(headerCont);
@@ -63,6 +64,17 @@ contactTab.addEventListener("click", function () {
     container.remove();
     contactScreen();
 });
+
+
+const footer = document.createElement("div");
+footer.id="footer";
+const footerPara = document.createElement("p");
+const footerText = "<a href='https://www.freepik.com/free-photo/cafe-bar-hotel-loft-style_4690095.htm'  target='_blank'>Background Image by jcomp on Freepik </a> / <a href ='https://github.com/MichalGrecner' target='_blank'>GitHub/MichalGrecner</a>";
+
+footerPara.innerHTML = footerText;
+footer.appendChild(footerPara)
+
+content.appendChild(footer)
 
 
 
