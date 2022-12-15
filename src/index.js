@@ -29,7 +29,7 @@ const menuArray = ["home", "menu", "contact"];
 for (let e of menuArray){
     let li = document.createElement("li");
     li.id = e;
-    li.innerText = e
+    li.innerText = e.toUpperCase()
     ulNav.appendChild(li);
 }
 nav.appendChild(ulNav)
