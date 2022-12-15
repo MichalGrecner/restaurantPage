@@ -97,7 +97,7 @@ const menuScreen = function () {
     const paraBottom = document.createElement("p");
     paraBottom.textContent = bottomText;
     menuDiv.appendChild(paraBottom);
-    menuDiv.appendChild(document.createElement("br"));
+    //menuDiv.appendChild(document.createElement("br"));
 
     container.appendChild(menuDiv);
     main.appendChild(container);

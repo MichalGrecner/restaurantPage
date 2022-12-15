@@ -3,7 +3,7 @@ const homeScreen = function () {
     const main = document.querySelector("main")
     const homeInfoIntro = "Hello and welcome to my 'Fake Café' website.";
     const homeInfopara1="This website is result of a task from 'The Odin Project' curriculum. The aim of this simple website is to bundle several separated .js modules together using Webpack. This site also should be responsive.";
-    const homeInfopara2="Because I need more text here I will just simply add some Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae beatae qui mollitia optio enim eaque officia illum voluptatibus magni. Exercitationem totam at assumenda id, minus animi autem consequatur! Iure ea aperiam voluptatibus autem nesciunt at odit dolore doloribus aspernatur. ";
+    const homeInfopara2="Because I need more text here I will just simply add some Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae beatae qui mollitia optio enim eaque officia illum voluptatibus magni.";
 
     const container = document.createElement("div");
     container.id = "container";
@@ -26,7 +26,7 @@ const homeScreen = function () {
     infoDiv.appendChild(para1);
     infoDiv.appendChild(document.createElement("br"));
     infoDiv.appendChild(para2);
-    infoDiv.appendChild(document.createElement("br"));
+    //infoDiv.appendChild(document.createElement("br"));
 
     container.appendChild(infoDiv);
     main.appendChild(container);

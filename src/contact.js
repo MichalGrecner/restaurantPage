@@ -44,7 +44,7 @@ const contactScreen = function () {
     container.appendChild(contactDiv);
     contactDiv.appendChild(document.createElement("br"));
     container.appendChild(mapDiv);
-    container.appendChild(document.createElement("br"));
+    //container.appendChild(document.createElement("br"));
     main.appendChild(container);
     
 }
